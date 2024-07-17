@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake & Pastry Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cake & Pastry Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to the Cake & Pastry Shop</h2>
+        <p>Find the best cakes and pastries here!</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        
+        <h3>Cakes</h3>
+        <div class="product-list">
+            <div class="product">
+                <img src="chocolate cake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>$15</p>
+                <button onclick="addToCart('Chocolate Cake', 15)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="strawberry cake.jpg" alt="Strawberry Cake">
+                <h3>Strawberry Cake</h3>
+                <p>$12</p>
+                <button onclick="addToCart('Strawberry Cake', 12)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="purple velvet cake.jpg" alt="Purple velvet cake">
+                <h3>Milk Cake</h3>
+                <p>$10</p>
+                <button onclick="addToCart('Purple velvet cake', 10)">Add to Cart</button>
+            </div>
+        </div>
+        
+        <h3>Pastries</h3>
+        <div class="product-list">
+            <div class="product">
+                <img src="croissants.jpg" alt="Croissant">
+                <h3>Croissant</h3>
+                <p>$3</p>
+                <button onclick="addToCart('Croissant', 3)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="macarons.jpg" alt="Macaron">
+                <h3>Macaron</h3>
+                <p>$2</p>
+                <button onclick="addToCart('Macaron', 2)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="truffle.jpg" alt="truffle">
+                <h3>Danish Pastry</h3>
+                <p>$4</p>
+                <button onclick="addToCart('truffle', 4)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Cake & Pastry Shop</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
